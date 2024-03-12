@@ -43,6 +43,8 @@
             PressureValue = new Label();
             WindValue = new Label();
             picIcon = new PictureBox();
+            TempValue = new Label();
+            TempLab = new Label();
             ((System.ComponentModel.ISupportInitialize)picIcon).BeginInit();
             SuspendLayout();
             // 
@@ -88,9 +90,12 @@
             ConLab.ForeColor = Color.Black;
             ConLab.Location = new Point(25, 259);
             ConLab.Name = "ConLab";
-            ConLab.Size = new Size(145, 39);
+            ConLab.Size = new Size(138, 45);
             ConLab.TabIndex = 3;
             ConLab.Text = "Condition:";
+            ConLab.TextAlign = ContentAlignment.TopRight;
+            ConLab.UseCompatibleTextRendering = true;
+            ConLab.UseMnemonic = false;
             // 
             // DetailsLab
             // 
@@ -110,7 +115,7 @@
             RiseLab.BackColor = Color.Transparent;
             RiseLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             RiseLab.ForeColor = Color.Black;
-            RiseLab.Location = new Point(46, 423);
+            RiseLab.Location = new Point(39, 394);
             RiseLab.Name = "RiseLab";
             RiseLab.Size = new Size(124, 39);
             RiseLab.TabIndex = 5;
@@ -122,7 +127,7 @@
             setLab.BackColor = Color.Transparent;
             setLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             setLab.ForeColor = Color.Black;
-            setLab.Location = new Point(54, 488);
+            setLab.Location = new Point(47, 433);
             setLab.Name = "setLab";
             setLab.Size = new Size(116, 39);
             setLab.TabIndex = 6;
@@ -158,7 +163,7 @@
             SunsetValue.BackColor = Color.Transparent;
             SunsetValue.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             SunsetValue.ForeColor = Color.Black;
-            SunsetValue.Location = new Point(192, 488);
+            SunsetValue.Location = new Point(192, 433);
             SunsetValue.Name = "SunsetValue";
             SunsetValue.Size = new Size(74, 39);
             SunsetValue.TabIndex = 9;
@@ -170,7 +175,7 @@
             SunriseValue.BackColor = Color.Transparent;
             SunriseValue.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             SunriseValue.ForeColor = Color.Black;
-            SunriseValue.Location = new Point(192, 423);
+            SunriseValue.Location = new Point(192, 394);
             SunriseValue.Name = "SunriseValue";
             SunriseValue.Size = new Size(74, 39);
             SunriseValue.TabIndex = 10;
@@ -203,12 +208,39 @@
             // picIcon
             // 
             picIcon.BackColor = Color.Transparent;
+            picIcon.BackgroundImageLayout = ImageLayout.Zoom;
+            picIcon.ErrorImage = (Image)resources.GetObject("picIcon.ErrorImage");
             picIcon.Location = new Point(45, 145);
+            picIcon.MaximumSize = new Size(200, 200);
             picIcon.Name = "picIcon";
-            picIcon.Size = new Size(50, 50);
-            picIcon.SizeMode = PictureBoxSizeMode.StretchImage;
+            picIcon.Size = new Size(125, 111);
+            picIcon.SizeMode = PictureBoxSizeMode.Zoom;
             picIcon.TabIndex = 14;
             picIcon.TabStop = false;
+            // 
+            // TempValue
+            // 
+            TempValue.AutoSize = true;
+            TempValue.BackColor = Color.Transparent;
+            TempValue.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TempValue.ForeColor = Color.Black;
+            TempValue.Location = new Point(576, 394);
+            TempValue.Name = "TempValue";
+            TempValue.Size = new Size(74, 39);
+            TempValue.TabIndex = 17;
+            TempValue.Text = "N/A";
+            // 
+            // TempLab
+            // 
+            TempLab.AutoSize = true;
+            TempLab.BackColor = Color.Transparent;
+            TempLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TempLab.ForeColor = Color.Black;
+            TempLab.Location = new Point(374, 394);
+            TempLab.Name = "TempLab";
+            TempLab.Size = new Size(196, 39);
+            TempLab.TabIndex = 16;
+            TempLab.Text = "Temperature:";
             // 
             // Form1
             // 
@@ -217,6 +249,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1845, 837);
+            Controls.Add(TempValue);
+            Controls.Add(TempLab);
             Controls.Add(picIcon);
             Controls.Add(WindValue);
             Controls.Add(PressureValue);
@@ -254,6 +288,9 @@
         private Label SunriseValue;
         private Label PressureValue;
         private Label WindValue;
-        private PictureBox picIcon;
+        public PictureBox picIcon;
+        private Label label1;
+        private Label TempValue;
+        private Label TempLab;
     }
 }

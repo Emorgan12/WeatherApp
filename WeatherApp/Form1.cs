@@ -19,20 +19,22 @@ namespace WeatherApp
         {
             using (WebClient web = new WebClient())
             {
-               
-                string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", CityInput.Text, APIKey);
-               
+
+                string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}&units=metric", CityInput.Text, APIKey);
+
                 try
                 {
+                    
                     var json = web.DownloadString(url);
                     WeatherInfo.root info = JsonConvert.DeserializeObject<WeatherInfo.root>(json);
-                    picIcon.ImageLocation = "https://openweathermap.org/img/w/" + info.weather[0].icon + ".png";
+                    picIcon.Image = Image.FromFile(info.weather[0].icon + ".png");
                     ConLab.Text = info.weather[0].main;
                     DetailsLab.Text = info.weather[0].description;
                     PressureValue.Text = info.main.pressure.ToString();
                     WindValue.Text = info.wind.speed.ToString();
                     SunriseValue.Text = convertDateTime(info.sys.sunrise).ToShortTimeString();
                     SunsetValue.Text = convertDateTime(info.sys.sunset).ToShortTimeString();
+                    TempValue.Text = info.main.temp.ToString() + " C";
                 }
 
                 catch
@@ -40,7 +42,7 @@ namespace WeatherApp
                     throw;
                     CityInput.Text = "Invalid Location";
                 }
-                  
+
 
             }
         }
@@ -56,5 +58,6 @@ namespace WeatherApp
             day = day.AddSeconds(sec).ToLocalTime();
             return day;
         }
+
     }
 }
