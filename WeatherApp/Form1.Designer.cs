@@ -78,6 +78,7 @@
             btnSearch.TabIndex = 2;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click_1;
             // 
             // ConLab
             // 
@@ -90,7 +91,6 @@
             ConLab.Size = new Size(145, 39);
             ConLab.TabIndex = 3;
             ConLab.Text = "Condition:";
-            
             // 
             // DetailsLab
             // 
@@ -103,7 +103,6 @@
             DetailsLab.Size = new Size(116, 39);
             DetailsLab.TabIndex = 4;
             DetailsLab.Text = "Details:";
-     
             // 
             // RiseLab
             // 
@@ -116,7 +115,6 @@
             RiseLab.Size = new Size(124, 39);
             RiseLab.TabIndex = 5;
             RiseLab.Text = "Sunrise:";
-            
             // 
             // setLab
             // 
@@ -177,7 +175,6 @@
             SunriseValue.Size = new Size(74, 39);
             SunriseValue.TabIndex = 10;
             SunriseValue.Text = "N/A";
-           
             // 
             // PressureValue
             // 
@@ -206,12 +203,12 @@
             // picIcon
             // 
             picIcon.BackColor = Color.Transparent;
-            picIcon.Location = new Point(36, 139);
+            picIcon.Location = new Point(45, 145);
             picIcon.Name = "picIcon";
-            picIcon.Size = new Size(113, 83);
-            picIcon.TabIndex = 13;
+            picIcon.Size = new Size(50, 50);
+            picIcon.SizeMode = PictureBoxSizeMode.StretchImage;
+            picIcon.TabIndex = 14;
             picIcon.TabStop = false;
-     
             // 
             // Form1
             // 
