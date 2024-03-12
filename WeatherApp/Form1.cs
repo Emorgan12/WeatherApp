@@ -32,14 +32,14 @@ namespace WeatherApp
                     DetailsLab.Text = info.weather[0].description;
                     PressureValue.Text = info.main.pressure.ToString();
                     WindValue.Text = info.wind.speed.ToString();
-                    SunriseValue.Text = convertDateTime(info.sys.sunrise).ToShortTimeString();
-                    SunsetValue.Text = convertDateTime(info.sys.sunset).ToShortTimeString();
-                    TempValue.Text = info.main.temp.ToString() + " C";
+                    SunriseValue.Text = convertDateTime(info.sys.sunrise);
+                    SunsetValue.Text = convertDateTime(info.sys.sunset);
+                    MaxTempValue.Text = info.main.temp_max.ToString() + " C";
+                    MinTempValue.Text = info.main.temp_min.ToString() + " C";
                 }
 
                 catch
                 {
-                    throw;
                     CityInput.Text = "Invalid Location";
                 }
 
@@ -52,11 +52,11 @@ namespace WeatherApp
             getWeather();
         }
 
-        DateTime convertDateTime(long sec)
+        string convertDateTime(long sec)
         {
             DateTime day = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc).ToLocalTime();
-            day = day.AddSeconds(sec).ToLocalTime();
-            return day;
+            string Sday = day.AddSeconds(sec).ToLocalTime().ToShortTimeString();
+            return Sday;
         }
 
     }
