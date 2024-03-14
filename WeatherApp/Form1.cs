@@ -27,7 +27,7 @@ namespace WeatherApp
                     
                     var json = web.DownloadString(url);
                     WeatherInfo.root info = JsonConvert.DeserializeObject<WeatherInfo.root>(json);
-                    picIcon.Image = Image.FromFile(info.weather[0].icon + ".png");
+                    picIcon.ImageLocation = "https://api.openweathermap.org/img/w/" + info.weather[0].icon + ".png";
                     ConLab.Text = info.weather[0].main;
                     DetailsLab.Text = info.weather[0].description;
                     PressureValue.Text = info.main.pressure.ToString();
