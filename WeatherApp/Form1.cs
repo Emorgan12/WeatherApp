@@ -24,7 +24,7 @@ namespace WeatherApp
 
                 try
                 {
-                    
+
                     var json = web.DownloadString(url);
                     WeatherInfo.root info = JsonConvert.DeserializeObject<WeatherInfo.root>(json);
                     picIcon.ImageLocation = "https://api.openweathermap.org/img/w/" + info.weather[0].icon + ".png";
@@ -58,6 +58,7 @@ namespace WeatherApp
             string Sday = day.AddSeconds(sec).ToLocalTime().ToShortTimeString();
             return Sday;
         }
+
 
     }
 }
