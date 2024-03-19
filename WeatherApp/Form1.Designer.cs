@@ -68,19 +68,18 @@
             CityLab.BackColor = Color.Transparent;
             CityLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CityLab.ForeColor = Color.Black;
-            CityLab.Location = new Point(88, 55);
+            CityLab.Location = new Point(101, 73);
             CityLab.Name = "CityLab";
-            CityLab.Size = new Size(60, 30);
+            CityLab.Size = new Size(77, 39);
             CityLab.TabIndex = 0;
             CityLab.Text = "City:";
             // 
             // CityInput
             // 
             CityInput.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CityInput.Location = new Point(168, 64);
-            CityInput.Margin = new Padding(3, 2, 3, 2);
+            CityInput.Location = new Point(192, 85);
             CityInput.Name = "CityInput";
-            CityInput.Size = new Size(158, 24);
+            CityInput.Size = new Size(180, 28);
             CityInput.TabIndex = 1;
             // 
             // btnSearch
@@ -89,10 +88,9 @@
             btnSearch.FlatStyle = FlatStyle.Flat;
             btnSearch.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSearch.ForeColor = Color.Black;
-            btnSearch.Location = new Point(345, 64);
-            btnSearch.Margin = new Padding(3, 2, 3, 2);
+            btnSearch.Location = new Point(394, 85);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(63, 24);
+            btnSearch.Size = new Size(72, 32);
             btnSearch.TabIndex = 2;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
@@ -104,9 +102,9 @@
             ConLab.BackColor = Color.Transparent;
             ConLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ConLab.ForeColor = Color.Black;
-            ConLab.Location = new Point(22, 194);
+            ConLab.Location = new Point(25, 259);
             ConLab.Name = "ConLab";
-            ConLab.Size = new Size(110, 36);
+            ConLab.Size = new Size(138, 45);
             ConLab.TabIndex = 3;
             ConLab.Text = "Condition:";
             ConLab.TextAlign = ContentAlignment.TopRight;
@@ -119,105 +117,113 @@
             DetailsLab.BackColor = Color.Transparent;
             DetailsLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             DetailsLab.ForeColor = Color.Black;
-            DetailsLab.Location = new Point(22, 286);
+            DetailsLab.Location = new Point(25, 381);
             DetailsLab.Name = "DetailsLab";
-            DetailsLab.Size = new Size(92, 30);
+            DetailsLab.Size = new Size(116, 39);
             DetailsLab.TabIndex = 4;
             DetailsLab.Text = "Details:";
             // 
             // RiseLab
             // 
+            RiseLab.Anchor = AnchorStyles.Right;
             RiseLab.AutoSize = true;
             RiseLab.BackColor = Color.Transparent;
             RiseLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             RiseLab.ForeColor = Color.Black;
-            RiseLab.Location = new Point(908, 296);
+            RiseLab.Location = new Point(1244, 395);
             RiseLab.Name = "RiseLab";
-            RiseLab.Size = new Size(97, 30);
+            RiseLab.Size = new Size(124, 39);
             RiseLab.TabIndex = 5;
             RiseLab.Text = "Sunrise:";
             // 
             // setLab
             // 
+            setLab.Anchor = AnchorStyles.Right;
             setLab.AutoSize = true;
             setLab.BackColor = Color.Transparent;
             setLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             setLab.ForeColor = Color.Black;
-            setLab.Location = new Point(908, 421);
+            setLab.Location = new Point(1244, 561);
             setLab.Name = "setLab";
-            setLab.Size = new Size(91, 30);
+            setLab.Size = new Size(116, 39);
             setLab.TabIndex = 6;
             setLab.Text = "Sunset:";
             // 
             // WindLab
             // 
+            WindLab.Anchor = AnchorStyles.Left;
             WindLab.AutoSize = true;
             WindLab.BackColor = Color.Transparent;
             WindLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             WindLab.ForeColor = Color.Black;
-            WindLab.Location = new Point(207, 296);
+            WindLab.Location = new Point(443, 395);
             WindLab.Name = "WindLab";
-            WindLab.Size = new Size(140, 30);
+            WindLab.Size = new Size(176, 39);
             WindLab.TabIndex = 7;
             WindLab.Text = "Wind speed:";
             // 
             // PressureLab
             // 
+            PressureLab.Anchor = AnchorStyles.Left;
             PressureLab.AutoSize = true;
             PressureLab.BackColor = Color.Transparent;
             PressureLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PressureLab.ForeColor = Color.Black;
-            PressureLab.Location = new Point(239, 421);
+            PressureLab.Location = new Point(479, 561);
             PressureLab.Name = "PressureLab";
-            PressureLab.Size = new Size(108, 30);
+            PressureLab.Size = new Size(141, 39);
             PressureLab.TabIndex = 8;
             PressureLab.Text = "Pressure:";
             // 
             // SunsetValue
             // 
+            SunsetValue.Anchor = AnchorStyles.Right;
             SunsetValue.AutoSize = true;
             SunsetValue.BackColor = Color.Transparent;
             SunsetValue.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             SunsetValue.ForeColor = Color.Black;
-            SunsetValue.Location = new Point(1063, 421);
+            SunsetValue.Location = new Point(1421, 561);
             SunsetValue.Name = "SunsetValue";
-            SunsetValue.Size = new Size(59, 30);
+            SunsetValue.Size = new Size(74, 39);
             SunsetValue.TabIndex = 9;
             SunsetValue.Text = "N/A";
             // 
             // SunriseValue
             // 
+            SunriseValue.Anchor = AnchorStyles.Right;
             SunriseValue.AutoSize = true;
             SunriseValue.BackColor = Color.Transparent;
             SunriseValue.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             SunriseValue.ForeColor = Color.Black;
-            SunriseValue.Location = new Point(1063, 301);
+            SunriseValue.Location = new Point(1421, 401);
             SunriseValue.Name = "SunriseValue";
-            SunriseValue.Size = new Size(59, 30);
+            SunriseValue.Size = new Size(74, 39);
             SunriseValue.TabIndex = 10;
             SunriseValue.Text = "N/A";
             // 
             // PressureValue
             // 
+            PressureValue.Anchor = AnchorStyles.Left;
             PressureValue.AutoSize = true;
             PressureValue.BackColor = Color.Transparent;
             PressureValue.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PressureValue.ForeColor = Color.Black;
-            PressureValue.Location = new Point(428, 421);
+            PressureValue.Location = new Point(695, 561);
             PressureValue.Name = "PressureValue";
-            PressureValue.Size = new Size(59, 30);
+            PressureValue.Size = new Size(74, 39);
             PressureValue.TabIndex = 11;
             PressureValue.Text = "N/A";
             // 
             // WindValue
             // 
+            WindValue.Anchor = AnchorStyles.Left;
             WindValue.AutoSize = true;
             WindValue.BackColor = Color.Transparent;
             WindValue.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             WindValue.ForeColor = Color.Black;
-            WindValue.Location = new Point(428, 296);
+            WindValue.Location = new Point(695, 395);
             WindValue.Name = "WindValue";
-            WindValue.Size = new Size(59, 30);
+            WindValue.Size = new Size(74, 39);
             WindValue.TabIndex = 12;
             WindValue.Text = "N/A";
             // 
@@ -226,160 +232,164 @@
             picIcon.BackColor = Color.Transparent;
             picIcon.BackgroundImageLayout = ImageLayout.Zoom;
             picIcon.ErrorImage = (Image)resources.GetObject("picIcon.ErrorImage");
-            picIcon.Location = new Point(46, 92);
-            picIcon.Margin = new Padding(3, 2, 3, 2);
-            picIcon.MaximumSize = new Size(175, 150);
+            picIcon.Location = new Point(53, 123);
+            picIcon.MaximumSize = new Size(200, 200);
             picIcon.Name = "picIcon";
-            picIcon.Size = new Size(109, 83);
+            picIcon.Size = new Size(125, 111);
             picIcon.SizeMode = PictureBoxSizeMode.Zoom;
             picIcon.TabIndex = 14;
             picIcon.TabStop = false;
             // 
             // MaxTempValue
             // 
+            MaxTempValue.Anchor = AnchorStyles.None;
             MaxTempValue.AutoSize = true;
             MaxTempValue.BackColor = Color.Transparent;
             MaxTempValue.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             MaxTempValue.ForeColor = Color.Black;
-            MaxTempValue.Location = new Point(788, 268);
+            MaxTempValue.Location = new Point(1107, 357);
             MaxTempValue.Name = "MaxTempValue";
-            MaxTempValue.Size = new Size(59, 30);
+            MaxTempValue.Size = new Size(74, 39);
             MaxTempValue.TabIndex = 17;
             MaxTempValue.Text = "N/A";
             // 
             // MaxTempLab
             // 
+            MaxTempLab.Anchor = AnchorStyles.None;
             MaxTempLab.AutoSize = true;
             MaxTempLab.BackColor = Color.Transparent;
             MaxTempLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             MaxTempLab.ForeColor = Color.Black;
-            MaxTempLab.Location = new Point(549, 268);
+            MaxTempLab.Location = new Point(833, 357);
             MaxTempLab.Name = "MaxTempLab";
-            MaxTempLab.Size = new Size(202, 30);
+            MaxTempLab.Size = new Size(259, 39);
             MaxTempLab.TabIndex = 16;
             MaxTempLab.Text = "Max Temperature:";
             // 
             // MinTempLab
             // 
+            MinTempLab.Anchor = AnchorStyles.None;
             MinTempLab.AutoSize = true;
             MinTempLab.BackColor = Color.Transparent;
             MinTempLab.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             MinTempLab.ForeColor = Color.Black;
-            MinTempLab.Location = new Point(549, 154);
+            MinTempLab.Location = new Point(833, 205);
             MinTempLab.Name = "MinTempLab";
-            MinTempLab.Size = new Size(196, 30);
+            MinTempLab.Size = new Size(250, 39);
             MinTempLab.TabIndex = 18;
             MinTempLab.Text = "Min Temperature:";
             // 
             // MinTempValue
             // 
+            MinTempValue.Anchor = AnchorStyles.None;
             MinTempValue.AutoSize = true;
             MinTempValue.BackColor = Color.Transparent;
             MinTempValue.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             MinTempValue.ForeColor = Color.Black;
-            MinTempValue.Location = new Point(788, 154);
+            MinTempValue.Location = new Point(1107, 205);
             MinTempValue.Name = "MinTempValue";
-            MinTempValue.Size = new Size(59, 30);
+            MinTempValue.Size = new Size(74, 39);
             MinTempValue.TabIndex = 19;
             MinTempValue.Text = "N/A";
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Left;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(316, 194);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
-            pictureBox1.MaximumSize = new Size(175, 150);
+            pictureBox1.Location = new Point(567, 259);
+            pictureBox1.MaximumSize = new Size(200, 200);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(109, 83);
+            pictureBox1.Size = new Size(125, 111);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Left;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox2.ErrorImage = (Image)resources.GetObject("pictureBox2.ErrorImage");
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(316, 328);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
-            pictureBox2.MaximumSize = new Size(175, 150);
+            pictureBox2.Location = new Point(567, 437);
+            pictureBox2.MaximumSize = new Size(200, 200);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(109, 83);
+            pictureBox2.Size = new Size(125, 111);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 21;
             pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
+            pictureBox3.Anchor = AnchorStyles.Right;
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox3.ErrorImage = (Image)resources.GetObject("pictureBox3.ErrorImage");
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(967, 194);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
-            pictureBox3.MaximumSize = new Size(175, 150);
+            pictureBox3.Location = new Point(1311, 259);
+            pictureBox3.MaximumSize = new Size(200, 200);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(109, 83);
+            pictureBox3.Size = new Size(125, 111);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 22;
             pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
+            pictureBox4.Anchor = AnchorStyles.Right;
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox4.ErrorImage = (Image)resources.GetObject("pictureBox4.ErrorImage");
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(967, 332);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
-            pictureBox4.MaximumSize = new Size(175, 150);
+            pictureBox4.Location = new Point(1311, 443);
+            pictureBox4.MaximumSize = new Size(200, 200);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(109, 83);
+            pictureBox4.Size = new Size(125, 111);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 23;
             pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
+            pictureBox5.Anchor = AnchorStyles.None;
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox5.ErrorImage = (Image)resources.GetObject("pictureBox5.ErrorImage");
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(658, 64);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
-            pictureBox5.MaximumSize = new Size(175, 150);
+            pictureBox5.Location = new Point(958, 85);
+            pictureBox5.MaximumSize = new Size(200, 200);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(109, 83);
+            pictureBox5.Size = new Size(125, 111);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 24;
             pictureBox5.TabStop = false;
             // 
             // pictureBox7
             // 
+            pictureBox7.Anchor = AnchorStyles.None;
             pictureBox7.BackColor = Color.Transparent;
             pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox7.ErrorImage = (Image)resources.GetObject("pictureBox7.ErrorImage");
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(658, 186);
-            pictureBox7.Margin = new Padding(3, 2, 3, 2);
-            pictureBox7.MaximumSize = new Size(175, 150);
+            pictureBox7.Location = new Point(985, 247);
+            pictureBox7.MaximumSize = new Size(200, 200);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(109, 83);
+            pictureBox7.Size = new Size(125, 111);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 26;
             pictureBox7.TabStop = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1184, 561);
+            ClientSize = new Size(1603, 748);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
@@ -405,7 +415,7 @@
             Controls.Add(CityInput);
             Controls.Add(CityLab);
             DoubleBuffered = true;
-            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(1459, 795);
             Name = "Form1";
             Text = " ";
             ((System.ComponentModel.ISupportInitialize)picIcon).EndInit();
