@@ -12,7 +12,7 @@ namespace WeatherApp
             InitializeComponent();
         }
 
-        string APIKey = "c4b99a3f43a298ed63bf5a36911ae32c";
+        string APIKey = API_KEY;
 
 
         void getWeather()
